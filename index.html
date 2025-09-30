@@ -59,6 +59,14 @@
       color: #1b5e20;
     }
     .tema-verde .caja { background: #66bb6a; }
+    
+    /* Tema rojo */
+    .tema-rojo {
+      background: #ffebee;  
+      color: #b71c1c;       
+    }
+
+    .tema-rojo .caja {background: #ef5350; }
 
     /* Tema oscuro */
     .tema-oscuro {
@@ -80,6 +88,7 @@
 
   <div>
     <button onclick="cambiarTema('tema-azul')">Tema Azul</button>
+    <button onclick="cambiarTema('tema-rojo')">Tema Rojo</button>
     <button onclick="cambiarTema('tema-verde')">Tema Verde</button>
     <button onclick="cambiarTema('tema-oscuro')">Tema Oscuro</button>
   </div>
@@ -92,11 +101,13 @@
       <p>Estos tests permiten observar de manera directa cómo un grupo de personas reales interactúa con un sitio web, identificando problemas de uso que los diseñadores o desarrolladores muchas veces no detectan por estar demasiado familiarizados con el producto.</p>
       <p>El autor retoma la definición de Yusef Hassan Montero, quien describe un test con usuarios como:</p>
       <p>“Una prueba de usabilidad que se basa en la observación y análisis de cómo un grupo de usuarios reales utiliza un sitio web, anotando los problemas de uso con los que se encuentran para poder solucionarlos posteriormente.”</p>
-      <p>Pruebas de usabilidad: no son simples opiniones o encuestas, sino experimentos prácticos para evaluar si un sitio funciona bien.</p>
-      <p>Observación: es central, porque no basta con preguntar; se debe ver cómo actúa el usuario en la práctica.</p>
-      <p>Usuarios reales: las pruebas deben hacerse con personas comunes, representativas del público objetivo, no con quienes diseñaron la página.</p>
-      <p>Problemas de uso: el objetivo es descubrir obstáculos, confusiones o dificultades que frenan la experiencia del usuario.</p>
-      <p>Solución posterior: la utilidad del test está en aplicar lo aprendido para mejorar la interfaz.</p>
+      <ul>
+      <li><b>Pruebas de usabilidad:</b> no son simples opiniones o encuestas, sino experimentos prácticos para evaluar si un sitio funciona bien.</li>
+      <li><b>Observación:</b> es central, porque no basta con preguntar; se debe ver cómo actúa el usuario en la práctica.</li>
+      <li><b>Usuarios reales:</b> las pruebas deben hacerse con personas comunes, representativas del público objetivo, no con quienes diseñaron la página.</li>
+      <li><b>Problemas de uso:</b> el objetivo es descubrir obstáculos, confusiones o dificultades que frenan la experiencia del usuario.</li>
+      <li><b>Solución posterior:</b> la utilidad del test está en aplicar lo aprendido para mejorar la interfaz.</li>
+          </ul>
     </div>
     <div class="imagen">
       <img src="https://images.ctfassets.net/lh3zuq09vnm2/2k2pDIr50LFNXerwcsy96j/e384c1278eb1c9eec23b037892e17498/what-is-usability-testing-1_FJaO9XF.jpg" alt="Imagen relacionada con usabilidad">
@@ -115,14 +126,15 @@ En conclusión, mientras más pronto se hagan los tests, más rápido se detecta
     </div>
     <div class="imagen">
       <h2>Video de ejemplo</h2>
-<iframe width="560" height="315" 
-src="https://www.youtube.com/embed/v8JJrDvQDF4
-" 
-title="YouTube video player" 
-frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen>
-</iframe>
+<div style="display: flex; justify-content: center;">
+  <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/v8JJrDvQDF4" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
 
     </div>
   </div>
@@ -130,24 +142,81 @@ allowfullscreen>
   <!-- Bloque 3 (texto izquierda, imagen derecha) -->
   <div class="contenido">
     <div class="texto">
-      <h2>¿Qué es un test con usuarios?</h2>
-      <p>Estos tests permiten observar de manera directa cómo un grupo de personas reales interactúa con un sitio web...</p>
-      <p>El autor retoma la definición de Yusef Hassan Montero...</p>
+      <h2>Planificación de un test con usuarios</h2>
+      <p>Este es una técnica de investigación de usabilidad donde se invita a personas reales (que representan al público objetivo de un producto ) a realizar tareas específicas dentro de la app mientras se observa cómo interactúan con ella, y si es que es funcional  y es facil para el publico objetivo.
+La idea de este es evaluar el producto, descubrir si es fácil de usar, dónde se confunden los usuarios y qué se puede mejorar.</p>
+     <b>1. Objetivo del test</b>
+<p>Definir claramente qué se quiere evaluar.
+Ejemplo: Analizar cómo las personas de avanzada edad interactúan con la aplicación de Transmilenio, observando las dificultades que enfrentan y las oportunidades de mejora.</p>
+<b>2. Perfil de los participantes</b>
+<p>Determinar quiénes deben participar (por ejemplo: estudiantes, adultos jóvenes entre 20 y 35 años, adultos mayores, etc.)
+- El número recomendado es de 5 a 7 personas, ya que suele ser suficiente para detectar la mayoría de los problemas de usabilidad.</p>
+<b>3. Tareas a realizar</b>
+<p>Se diseñan metas concretas que los usuarios deben intentar alcanzar. No se trata de dar instrucciones paso a paso, sino de plantear objetivos que permitan evaluar la efectividad del producto.
+Ejemplos de tareas:</p>
+      <ul>
+<li>Registrarse en la aplicación.</li>
+<li>Buscar un botón o función específica.</li>
+<li>Realizar un pago dentro de la app.</li>
+      </ul>
+<b>4. Metodología y entorno de prueba</b>
+      <ul>
+<li><b>Lugar:</b> Puede ser presencial (en un laboratorio o aula) o remoto (por videollamada compartiendo pantalla).</li>
+<li><b>Herramientas:</b> grabación de pantalla, notas de observación y cronómetro para medir tiempos.</li>
+      </ul>
+<b>5. Cronograma de la sesión</b>
+      <ul>
+<li><b>Bienvenida:</b> Explicar que no se evalúa al usuario, sino al producto.</li>
+<li><b>Consentimiento:</b> Solicitar permiso para grabar la sesión (si aplica).</li>
+<li><b>Ejecución de tareas:</b> los usuarios intentan cumplir las metas propuestas.</li>
+<li><b>Preguntas finales:</b> breves sobre satisfacción, dificultad y sugerencias.</li>
+<li><b>Cierre:</b> Agradecer la participación y despedir al usuario.</li>
+      </ul>
+<b>6. Acciones a registrar</b>
+      <ul>
+<li>Tiempo necesario para completar cada tarea.</li>
+<li>Si la tarea fue completada con éxito o no.</li>
+<li>Número de errores cometidos.</li>
+<li>Comentarios y emociones expresadas durante la prueba.</li>
+      </ul>
+<b>7. Análisis de resultados</b>
+      <ul>
+<li>Identificar los principales problemas de usabilidad detectados.</li>
+<li>Clasificarlos según su gravedad: críticos, medios o leves.</li>
+<li>Proponer mejoras en diseño, contenido o procesos.</li>
+      </ul>
+<b>8. Informe final</b>
+      <ul>
+<li>Resumen del objetivo, participantes y tareas planteadas.</li>
+<li>Principales falencias observadas.</li>
+<li>Recomendaciones concretas para mejorar la experiencia del usuario.</li>
+      </ul>
     </div>
     <div class="imagen">
-      <img src="ejemplo.png" alt="Imagen relacionada con usabilidad">
-    </div>
+      <img src="https://cdn.prod.website-files.com/631a5987aadcff365f4aeed5/6812726bd6c139ac3136b416_usability-test-guide.png" alt="Imagen relacionada con usabilidad">
+<img src="https://images.ctfassets.net/lh3zuq09vnm2/6AdBP8OMMTwmpZ9ILyfnwp/c16838fac0dfe4efff427e732672739d/usability-testing-methods_eg69g0f.jpg" alt="Imagen relacionada con usabilidad">
+   <img src="https://files.virgool.io/upload/users/2051125/posts/fjjxhb4hqejy/aszatqjgp5tq.png" alt="Imagen relacionada con usabilidad">
+ </div>
   </div>
 
   <!-- Bloque 4 (texto derecha, imagen izquierda) -->
   <div class="contenido invertido">
     <div class="texto">
-      <h2>¿Qué es un test con usuarios?</h2>
-      <p>Estos tests permiten observar de manera directa cómo un grupo de personas reales interactúa con un sitio web...</p>
-      <p>El autor retoma la definición de Yusef Hassan Montero...</p>
-    </div>
+      <h2>Ejemplos de tareas para un test</h2>
+      <p>Sirven para evaluar la usabilidad, porque muestran qué tan fácil o difícil es para alguien completar acciones típicas. Para hacer un test debemos tener en cuenta que se trata de una serie de instrucciones claras, concisas y precisas que estamos invitando al usuario a realizar. Lógicamente, la realización exitosa de estas tareas debería conllevar necesariamente y en todas las ocasiones la consecución de los objetivos del proyecto.</p>
+      <p>Ejemplo de tareas para un test (creación de una página interactiva)</p>
+<p>1. Averiguar quiénes son las personas a quienes va dirigida la página interactiva.</p>
+<p>2. Buscar información sobre el tema para la página.</p>
+<p>3. Preguntar las preferencias de los usuarios para el diseño y colores de la página.</p>
+<p>4. Buscar referencias para la creación de la página.</p>
+<p>5. Crear la página teniendo en cuenta estos datos.</p>
+<p>6. Probar la funcionalidad de la página.</p>
+<p>7. Consultar a los usuarios periódicamente por la usabilidad y calidad.</p>
+<p>8. Realizar los cambios pertinentes de ser necesario. </p>
+<p>9. Comprobar que todo funcione.</p>
+<p>10. Seleccionar y entregar este diseño a los usuarios.</p>    </div>
     <div class="imagen">
-      <img src="ejemplo.png" alt="Imagen relacionada con usabilidad">
+      <img src="https://think360studio-media.s3.ap-south-1.amazonaws.com/photo/plugin/article/2022/Moderated-Usability-Testing-17102022.jpg" alt="Imagen relacionada con usabilidad">
     </div>
   </div>
 
