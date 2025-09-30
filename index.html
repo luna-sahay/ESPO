@@ -2,19 +2,48 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Demo de Usabilidad</title>
+  <title>Usabilidad. Deja de sufrir</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      transition: all 0.4s ease; /* Animación suave */
+      transition: all 0.4s ease;
       padding: 30px;
       text-align: center;
+      font-size: 20px; /* letra más grande */
     }
+
     .caja {
       padding: 20px;
       border-radius: 10px;
       margin: 20px;
       color: white;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .contenido {
+      display: flex;
+      align-items: flex-start;
+      gap: 100px;
+      margin: 40px 0;
+      text-align: left;
+    }
+
+    .contenido.invertido {
+      flex-direction: row-reverse;
+    }
+
+    .texto {
+      flex: 1;
+    }
+
+    .imagen {
+      flex: 1;
+    }
+
+    .imagen img {
+      max-width: 100%;
+      border-radius: 10px;
     }
 
     /* Tema azul */
@@ -42,18 +71,76 @@
       margin: 5px;
       padding: 10px 20px;
       cursor: pointer;
+      font-size: 18px;
     }
   </style>
 </head>
 <body class="tema-azul">
-  <h1>Ejemplo de cambio de temas</h1>
-  <p>Haz clic en un botón para cambiar el estilo completo:</p>
+  <h1>Usabilidad. Deja de sufrir</h1>
 
-  <div class="caja">Soy una caja de ejemplo</div>
+  <div>
+    <button onclick="cambiarTema('tema-azul')">Tema Azul</button>
+    <button onclick="cambiarTema('tema-verde')">Tema Verde</button>
+    <button onclick="cambiarTema('tema-oscuro')">Tema Oscuro</button>
+  </div>
 
-  <button onclick="cambiarTema('tema-azul')">Tema Azul</button>
-  <button onclick="cambiarTema('tema-verde')">Tema Verde</button>
-  <button onclick="cambiarTema('tema-oscuro')">Tema Oscuro</button>
+  <!-- Bloque 1 (texto izquierda, imagen derecha) -->
+  <div class="caja">Testing con usuarios</div>
+  <div class="contenido">
+    <div class="texto">
+      <h2>¿Qué es un test con usuarios?</h2>
+      <p>Estos tests permiten observar de manera directa cómo un grupo de personas reales interactúa con un sitio web, identificando problemas de uso que los diseñadores o desarrolladores muchas veces no detectan por estar demasiado familiarizados con el producto.</p>
+      <p>El autor retoma la definición de Yusef Hassan Montero, quien describe un test con usuarios como:</p>
+      <p>“Una prueba de usabilidad que se basa en la observación y análisis de cómo un grupo de usuarios reales utiliza un sitio web, anotando los problemas de uso con los que se encuentran para poder solucionarlos posteriormente.”</p>
+      <p>Pruebas de usabilidad: no son simples opiniones o encuestas, sino experimentos prácticos para evaluar si un sitio funciona bien.</p>
+<p>Observación: es central, porque no basta con preguntar; se debe ver cómo actúa el usuario en la práctica.</p>
+<p>Usuarios reales: las pruebas deben hacerse con personas comunes, representativas del público objetivo, no con quienes diseñaron la página.</p>
+<p>Problemas de uso: el objetivo es descubrir obstáculos, confusiones o dificultades que frenan la experiencia del usuario.</p>
+<p>Solución posterior: la utilidad del test está en aplicar lo aprendido para mejorar la interfaz.</p>
+    </div>
+    <div class="imagen">
+      <img src="https://images.ctfassets.net/lh3zuq09vnm2/2k2pDIr50LFNXerwcsy96j/e384c1278eb1c9eec23b037892e17498/what-is-usability-testing-1_FJaO9XF.jpg" alt="Imagen relacionada con usabilidad">
+    </div>
+  </div>
+
+  <!-- Bloque 2 (texto derecha, imagen izquierda) -->
+  <div class="caja">Testing con usuarios</div>
+  <div class="contenido invertido">
+    <div class="texto">
+      <h2>¿Qué es un test con usuarios?</h2>
+      <p>Estos tests permiten observar de manera directa cómo un grupo de personas reales interactúa con un sitio web...</p>
+      <p>El autor retoma la definición de Yusef Hassan Montero...</p>
+    </div>
+    <div class="imagen">
+      <img src="ejemplo.png" alt="Imagen relacionada con usabilidad">
+    </div>
+  </div>
+
+  <!-- Bloque 3 (texto izquierda, imagen derecha) -->
+  <div class="caja">Testing con usuarios</div>
+  <div class="contenido">
+    <div class="texto">
+      <h2>¿Qué es un test con usuarios?</h2>
+      <p>Estos tests permiten observar de manera directa cómo un grupo de personas reales interactúa con un sitio web...</p>
+      <p>El autor retoma la definición de Yusef Hassan Montero...</p>
+    </div>
+    <div class="imagen">
+      <img src="ejemplo.png" alt="Imagen relacionada con usabilidad">
+    </div>
+  </div>
+
+  <!-- Bloque 4 (texto derecha, imagen izquierda) -->
+  <div class="caja">Testing con usuarios</div>
+  <div class="contenido invertido">
+    <div class="texto">
+      <h2>¿Qué es un test con usuarios?</h2>
+      <p>Estos tests permiten observar de manera directa cómo un grupo de personas reales interactúa con un sitio web...</p>
+      <p>El autor retoma la definición de Yusef Hassan Montero...</p>
+    </div>
+    <div class="imagen">
+      <img src="ejemplo.png" alt="Imagen relacionada con usabilidad">
+    </div>
+  </div>
 
   <script>
     function cambiarTema(tema) {
@@ -62,3 +149,4 @@
   </script>
 </body>
 </html>
+
